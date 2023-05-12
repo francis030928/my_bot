@@ -1,9 +1,9 @@
 # import string
-# import nltk
-# nltk.download('punkt')
-# nltk.download('stopwords')
-# from nltk.corpus import stopwords
-# from nltk.tokenize import word_tokenize, sent_tokenize
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize, sent_tokenize
 
 # stop_words = set(stopwords.words('english'))
 
