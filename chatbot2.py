@@ -89,7 +89,7 @@ with open("human_text.txt", 'r', encoding='utf8', errors='ignore') as file:
 import pandas as pd
 
 # read the file with two delimiters separated by tabs
-df = pd.read_csv(r'human_text.txt', sep='\t', header=None, names=['question', 'answer', 'extra'])
+# df = pd.read_csv(r'human_text.txt', sep='\t', header=None, names=['question', 'answer', 'extra'])
 
 sent_tokens = nltk.sent_tokenize(dataset)
 word_tokens = nltk.word_tokenize(dataset)
