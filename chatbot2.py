@@ -1,9 +1,9 @@
 # import string
-import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize, sent_tokenize
+# import nltk
+# nltk.download('punkt')
+# nltk.download('stopwords')
+# from nltk.corpus import stopwords
+# from nltk.tokenize import word_tokenize, sent_tokenize
 
 # stop_words = set(stopwords.words('english'))
 
@@ -73,15 +73,16 @@ from nltk.tokenize import word_tokenize, sent_tokenize
 
 # Read in dataset
 import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize, sent_tokenize
 import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import streamlit as st
 
-# Download required NLTK data
-# nltk.download('stopwords')
-# nltk.download('punkt')
-# nltk.download('wordnet')
 
 with open("human_text.txt", 'r', encoding='utf8', errors='ignore') as file:
     dataset = file.read()
